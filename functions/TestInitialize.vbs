@@ -1,7 +1,6 @@
 Public gBasePath           ' Stores the value of the current QTP test base folder.
 gBasePath = CreateObject("Scripting.FileSystemObject").GetParentFolderName(Environment.Value("TestDir"))
  
- 
 'Load the properties as Environment Variables of QTP/UFT
 LoadProperties(gBasePath & "\properties\" & TestArgs("env") & ".properties")
  
